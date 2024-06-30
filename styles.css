@@ -59,6 +59,16 @@ footer {
     width: 100%;
 }
 
+.post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    margin-bottom: 10px;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     header, footer {
