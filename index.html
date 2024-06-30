@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Website</title>
+    <title>Enhanced Form Validation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Interactive Website</h1>
+        <h1>Welcome to My Enhanced Form Validation Website</h1>
     </header>
     <main>
         <section id="home">
@@ -23,10 +23,21 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </section>
@@ -34,9 +45,13 @@
             <h2>Interactive Section</h2>
             <button id="colorButton">Change Background Color</button>
         </section>
+        <section id="posts">
+            <h2>Fetched Posts</h2>
+            <div id="postContainer"></div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Interactive Website</p>
+        <p>&copy; 2024 My Enhanced Form Validation Website</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
